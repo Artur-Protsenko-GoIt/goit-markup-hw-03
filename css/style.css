@@ -41,6 +41,9 @@ a {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 
 .container {
   max-width: 1158px;
@@ -132,7 +135,7 @@ button {
   color: #ffffff;
   line-height: 1.07;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
 }
 .hero-button {
   font-weight: 500;
@@ -144,6 +147,7 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
+  min-width: 169px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -178,6 +182,8 @@ button {
 }
 /* Team */
 
+.container-team-member {
+}
 .team-hedder {
   font-weight: 700;
   font-size: 36px;
@@ -186,7 +192,7 @@ button {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team {
   background-color: #f4f4fd;
@@ -194,6 +200,7 @@ button {
 }
 .team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   font-weight: 500;
@@ -215,16 +222,18 @@ button {
   color: #434455;
   line-height: 1.5;
 }
+
+.container-team-member {
+  padding: 32px 0;
+  text-align: center;
+}
+
 /* Project items */
 
 .container-project {
-  padding: 120px 0;
+  padding: 120px 0 120px 0;
 }
 
-.container-team-member {
-  padding: 32px 16px;
-  text-align: center;
-}
 .project-header {
   font-weight: 700;
   font-size: 36px;
@@ -249,6 +258,9 @@ button {
   line-height: 1.2;
   margin-bottom: 8px;
 }
+.project-list-item {
+  width: calc((100% - 48px) / 3);
+}
 .container-card-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -261,6 +273,10 @@ button {
   color: #434455;
   line-height: 1.5;
 }
+/* Footer */
+.footer-container {
+  padding: 100px 0;
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   line-height: 1.17;
@@ -269,6 +285,8 @@ button {
   font-size: 18px;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-logo-span {
   font-weight: 700;
@@ -282,6 +300,7 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   line-height: 1.5;
+  max-width: 264px;
 }
 .footer {
   background-color: #2e2f42;
