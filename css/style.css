@@ -1,6 +1,19 @@
 /* font-family: "Roboto",sans-serif;
 font-family: "Raleway",sans-serif; */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -136,12 +149,25 @@ button {
 .hero-button:focus {
   background-color: #404bbf;
 }
+/* Features */
+.features-list-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.features-container-item {
+  width: calc((100% - 72px) / 4);
+}
+.features {
+  padding: 120px 0;
+}
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
   color: #2e2f42;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -150,6 +176,8 @@ button {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
+/* Team */
+
 .team-hedder {
   font-weight: 700;
   font-size: 36px;
@@ -158,9 +186,11 @@ button {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-item {
   background-color: #ffffff;
@@ -171,9 +201,12 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .team-list {
-  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .team-role {
   font-weight: 400;
@@ -182,6 +215,16 @@ button {
   color: #434455;
   line-height: 1.5;
 }
+/* Project items */
+
+.container-project {
+  padding: 120px 0;
+}
+
+.container-team-member {
+  padding: 32px 16px;
+  text-align: center;
+}
 .project-header {
   font-weight: 700;
   font-size: 36px;
@@ -189,7 +232,14 @@ button {
   color: #2e2f42;
   line-height: 1.11;
   text-align: center;
+  margin-bottom: 72px;
   text-transform: capitalize;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px 24px;
 }
 .project-title {
   font-weight: 500;
@@ -197,6 +247,12 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   line-height: 1.2;
+  margin-bottom: 8px;
+}
+.container-card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .project-text {
   font-weight: 400;
